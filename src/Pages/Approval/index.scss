@@ -1,0 +1,532 @@
+.s-approval {
+
+    .s-title {
+        margin: 10px 0;
+        padding-bottom: 8px;
+        border-bottom: solid 2px #58595b;
+        font-size: 25px;
+        font-weight: 700;
+        color: #072d7a;
+        text-transform: capitalize;
+
+        @media(max-width: 479px) {
+            margin-top: 0;
+            font-size: 23px;
+        }
+    }
+
+    .s-left {
+        padding-right: 15px;
+
+        @media(max-width: 479px) {
+            padding-right: 0px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .rs-picker-toggle-placeholder {
+        font-size: 18px;
+    }
+
+    .b-input {
+        input {
+            padding: 12px !important;
+            font-size: 16px;
+
+            @media(max-width: 479px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .rs-btn {
+        height: 48px;
+        border-color: #c4c4c4;
+        background-color: #f8f6f7 !important;
+    }
+
+    .rs-stack-item {
+        margin-top: 5px !important;
+        font-size: 17px;
+    }
+
+    .rs-btn-close {
+        margin-top: 4px !important;
+    }
+
+    .rs-picker-toggle-value {
+        font-size: 18px;
+        color: #333 !important;
+    }
+
+    .MuiInputLabel-root {
+        top: -3px;
+        font-size: 16px;
+
+        @media(max-width: 479px) {
+            font-size: 15px;
+        }
+    }
+
+    .MuiCheckbox-root {
+        padding: 0 !important;
+    }
+
+    .rs-picker-toggle-read-only {
+        opacity: 1 !important;
+    }
+
+    .b-table {
+        max-height: auto;
+    }
+
+    .b-table--active {
+        max-height: 252px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.1) !important;
+        }
+
+        @media screen and (max-width: 1024px) {
+            max-height: 195px;
+        }
+
+        @media screen and (max-width: 991px) {
+            max-height: 141px;
+        }
+    }
+
+    .b-table-control{
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.1) !important;
+        }
+    }
+}
+
+.b-card-header {
+    background: #072d7a;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+
+    @media screen and (max-width: 991px) {
+        font-size: 16px;
+    }
+
+    .b-top {
+
+        text-align: center;
+
+        .b-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+            text-transform: capitalize;
+        }
+
+        .b-item--first {
+            width: 5%;
+
+            @media screen and (max-width: 479px) {
+                display: none;
+            }
+        }
+
+        .b-item--sec {
+            width: 10%;
+
+            @media screen and (max-width: 479px) {
+                width: 20%;
+            }
+        }
+
+        .b-item--eighth {
+            width: 15%;
+
+            @media screen and (max-width: 479px) {
+                width: 25%;
+            }
+        }
+
+        .b-item--nineth {
+            width: 10%;
+
+            @media screen and (max-width: 479px) {
+                width: 25%;
+                display: none;
+            }
+        }
+
+        .b-item--third {
+            width: 10%;
+
+            @media screen and (max-width: 479px) {
+                width: 12%;
+            }
+        }
+
+        .b-item--fourth {
+            width: 15%;
+
+            @media screen and (max-width: 479px) {
+                width: 15%;
+            }
+        }
+
+        .b-item--fifth {
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+            text-transform: capitalize;
+
+            @media screen and (max-width: 479px) {
+                width: 28%;
+            }
+        }
+
+        .b-item--sixth {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+            text-transform: capitalize;
+            align-items: baseline;
+            justify-content: space-between;
+
+            @media screen and (max-width: 479px) {
+                width: 28%;
+                display: none;
+            }
+
+            .b-sub{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .b-item--seventh {
+            width: 100%;
+        }
+
+        .b-sub {
+            padding: 5px;
+
+            @media screen and (max-width: 479px) {
+                padding: 5px 0;
+            }
+        }
+
+        .b-border-top {
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .b-border-underline {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .b-border-right {
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+        }
+    }
+}
+
+.b-card-header--emp {
+    background: #072d7a;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+
+    @media screen and (max-width: 991px) {
+        font-size: 16px;
+    }
+
+    .b-top {
+        text-align: center;
+
+        .b-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: capitalize;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 10px;
+        }
+
+        .b-item--first {
+            width: 5%;
+
+            @media screen and (max-width: 479px) {
+                display: none;
+            }
+        }
+
+        .b-item--sec {
+            width: 30%;
+        }
+
+        .b-item--third {
+            width: 15%;
+
+            @media screen and (max-width: 479px) {
+                width: 20%;
+            }
+        }
+
+        .b-item--fourth {
+            width: 15%;
+
+            @media screen and (max-width: 479px) {
+                width: 20%;
+            }
+        }
+
+        .b-item--fifth {
+            width: 10%;
+
+            @media screen and (max-width: 479px) {
+                display: none;
+            }
+        }
+
+        .b-item--sixth {
+            width: 10%;
+
+            @media screen and (max-width: 479px) {
+                width: 15%;
+            }
+        }
+
+        .b-item--seventh {
+            width: 15%;
+            border-right: none;
+        }
+    }
+}
+
+.b-card-11 {
+    border: 1px solid #dadada;
+    border-top: none;
+    overflow: hidden;
+    transition: all .6s;
+    font-size: 17px;
+
+    .b-top {
+        background-color: #fff;
+        transition: all .4s ease;
+
+        .b-item{
+            border-right: 1px solid #dadada;
+            padding: 10px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .6s ease;
+
+            @media screen and (max-width: 479px) {
+                word-break: break-all;
+                font-size: 16px;
+            }
+        }
+
+        .b-item--first {
+            width: 5%;
+            cursor: pointer;
+
+            @media screen and (max-width: 479px) {
+                display: none;
+            }
+        }
+
+        .b-item--sec {
+            width: 10%;
+            justify-content: flex-start;
+            cursor: pointer;
+
+            @media screen and (max-width: 479px) {
+                word-break: unset;
+                width: 20%;
+            }
+        }
+
+        .b-item--nineth {
+            width: 10%;
+            cursor: pointer;
+
+            @media screen and (max-width: 479px) {
+                width: 25%;
+                display: none;
+            }
+        }
+
+        .b-item--eighth {
+            width: 15%;
+            justify-content: flex-start;
+            cursor: pointer;
+
+            @media screen and (max-width: 479px) {
+                width: 25%;
+            }
+        }
+
+        .b-item--third {
+            width: 10%;
+            cursor: pointer;
+
+            @media screen and (max-width: 479px) {
+                width: 12%;
+            }
+        }
+
+        .b-item--fourth {
+            width: 15%;
+            cursor: pointer;
+            justify-content: flex-start;
+
+            @media screen and (max-width: 479px) {
+                width: 15%;
+            }
+        }
+
+        .b-item--fifth {
+            width: 7.5%;
+            gap: 5px;
+
+            @media screen and (max-width: 479px) {
+                width: 14%;
+            }
+
+            .MuiTypography-root {
+                font-size: 16px;
+            }
+
+            .MuiFormControlLabel-root {
+                margin: 0;
+            }
+        }
+
+        .b-item--sixth {
+            width: 10%;
+            cursor: pointer;
+
+            @media screen and (max-width: 479px) {
+                display: none;
+            }
+        }
+
+        .b-right-none{
+            border-right: none;
+        }
+    }
+}
+
+.b-justify--start {
+    justify-content: flex-start !important;
+}
+
+.b-card-11--active {
+    .b-top {
+        background-color: cornsilk;
+    }
+}
+
+.b-card-14 {
+    border: 1px solid #dadada;
+    border-top: none;
+    font-size: 17px;
+
+    .b-top {
+        text-align: center;
+        background-color: #fff;
+        transition: all .4s ease;
+
+        .b-item{
+            border-right: 1px solid #dadada;
+            padding: 10px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: 479px) {
+                word-break: break-all;
+                font-size: 16px;
+            }
+        }
+
+        .b-item--first {
+            width: 5%;
+
+            @media screen and (max-width: 479px) {
+                display: none;
+            }
+        }
+
+        .b-item--sec {
+            width: 30%;
+            justify-content: flex-start;
+            text-transform: capitalize;
+        }
+
+        .b-item--third {
+            width: 15%;
+
+            @media screen and (max-width: 479px) {
+                width: 20%;
+            }
+        }
+
+        .b-item--fourth {
+            width: 15%;
+
+            @media screen and (max-width: 479px) {
+                width: 20%;
+            }
+        }
+
+        .b-item--fifth {
+            width: 10%;
+
+            @media screen and (max-width: 479px) {
+                display: none;
+            }
+        }
+
+        .b-item--sixth {
+            width: 10%;
+
+            @media screen and (max-width: 479px) {
+                width: 15%;
+            }
+        }
+
+        .b-item--seventh {
+            width: 15%;
+            border-right: none;
+
+            .MuiTypography-root {
+                font-size: 16px;
+            }
+
+            .MuiFormControlLabel-root {
+                margin: 0;
+            }
+        }
+    }
+}

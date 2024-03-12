@@ -1,0 +1,208 @@
+@import "../../styles/color.scss";
+
+.s-sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: $color-white;
+    background-color: $color-white;
+    z-index: 999;
+    max-width: 270px;
+    transition: all ease 0.3s;
+    border-right: 1px solid $color-border;
+    overflow-y: auto;
+
+    @media screen and (min-width: 992px) {
+        width: 270px;
+    }
+
+    @media screen and (max-width: 991px) {
+        left: -100%;
+    }
+
+    @media screen and (max-width: 479px) {
+        width: 250px;
+        border-right: none;
+    }
+
+    /* Scrollbar Styling */
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: $color-white-1;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: $color-gray; 
+    }
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        gap: 5px;
+        height: 70px;
+        border-bottom: 1px solid $color-border;
+        cursor: pointer;
+
+        &-title{
+            font-size: 16px !important;
+            color: #2b3a4a;
+            text-transform: none;
+            font-weight: 800 !important;
+            line-height: 1.3 !important;
+            text-align: left;
+
+            @media screen and (max-width: 479px) {
+                font-size: 15px !important;
+            }
+
+            // span{
+            //     letter-spacing: 0.5px;
+            //     font-size: 18px;
+
+            //     @media screen and (max-width: 479px) {
+            //         font-size: 17px;
+            //     }
+            // }
+        }
+
+        &-desc{
+            font-size: 12px !important;
+            font-weight: 700 !important;
+            color: #58595b;
+        font-family: Mulish,sans-serif !important;
+        }
+
+        &-thumb{
+            width: 85px;
+            display: flex;
+            background-position: center;
+            background-size: cover;
+            border-radius: 5px;
+            overflow: hidden;
+
+            img{
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__menu{
+
+        &-item{
+            align-items: center;
+            background-color: #fff;
+            border-bottom: 1px solid #eaedf1;
+            color: #495584;
+            cursor: pointer;
+            display: flex;
+            gap: 7px;
+            height: 60px;
+            padding: 0 20px;
+            transition: all .4s ease;
+
+            &-thumb{
+                width: 52px;
+                display: flex;
+            }
+
+            &-title{
+                font-weight: 700 !important;
+                font-size: 18px !important;
+                font-family: Mulish, sans-serif !important;
+            }
+
+            &--sub {
+                background-color: #1c366b!important;
+                color: #fff!important;
+                cursor: auto!important;
+                gap: 7px!important;
+                height: 55px!important;
+            }
+        }
+    }
+}
+
+.is-open{
+
+    @media screen and (min-width: 992px) {
+        width: 80px;
+    }
+
+    @media screen and (max-width: 991px) {
+        left: 0;
+    }
+
+    .s-menu-title{
+        display: none;
+
+        @media screen and (max-width: 991px) {
+            display: block;
+        }
+    }
+
+    .s-menu-top{
+        padding: 0 10px;
+        justify-content: center;
+
+        @media screen and (max-width: 991px) {
+            justify-content: flex-start;
+            padding: 0 25px;
+        }
+
+        @media screen and (max-width: 991px) {
+            padding: 0 15px;
+        }
+    }
+
+    .s-sidebar__logo{
+        justify-content: center;
+        
+
+        &-title, &-desc{
+            display: none;
+        }
+
+        @media screen and (max-width: 991px) {
+
+            &-title, &-desc{
+                display: block;
+            }
+
+            &-desc{
+                font-size: 11px !important;
+            }
+        }
+    }
+
+    .s-sidebar__menu{
+
+        &-item {
+            padding: 0 10px;
+
+            @media screen and (min-width: 992px) {
+                justify-content: center;
+            }
+
+            &-title{
+                display: none;
+            }
+
+            @media screen and (max-width: 991px) {
+                padding: 0 15px;
+
+                &-title{
+                    display: block;
+                }
+            }
+        }
+    }
+}

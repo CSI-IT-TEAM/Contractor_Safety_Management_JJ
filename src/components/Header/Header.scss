@@ -1,0 +1,165 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/color.scss";
+
+.s-header{
+    @include flex(center, space-between);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99 !important;
+    background: $color-white;
+    transition: all ease 0.3s;
+    padding: 10px 25px;
+    border-bottom: 1px solid $color-border;
+
+    @media screen and (min-width: 992px) {
+        padding-left: 290px;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 10px 15px;
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 10px;
+    }
+
+    &-content{
+        @include flex(center, center);
+        gap: 15px;
+
+        @media screen and (max-width: 575px) {
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 479px) {
+            gap: 7px;
+        }
+
+        .s-avatar{
+            @include flex(center, center);
+            gap: 7px;
+            cursor: pointer;
+
+            @media screen and (max-width: 479px) {
+                gap: 0;
+                margin-left: 5px;
+            }
+
+            &__thumb{
+                width: 50px;
+                height: 50px;
+                border: 2px solid $color-main;
+            }
+
+            &__title{
+                font-size: 14px;
+                color: $color-blue-1;
+                line-height: 1;
+
+                @media screen and (max-width: 575px) {
+                    display: none;
+                }
+            }
+
+            &__name{
+                color: $color-blue-2;
+                font-weight: 700;
+
+                @media screen and (max-width: 575px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-menu{
+        cursor: pointer;
+        color: $color-main;
+    }
+
+    &-lang{
+
+        .MuiSelect-select{
+            display: flex;
+            align-items: flex-end;
+            gap: 5px;
+            color: $color-blue-1;
+            font-weight: 600;
+            background: transparent !important;
+
+            span{
+                display: flex;
+            }
+
+            @media screen and (max-width: 479px) {
+                span:last-child{
+                    display: none;
+                }
+            }
+        }
+
+        img{
+            max-width: 40px;
+            border: 1px solid $color-border;
+        }
+    }
+
+    .s-lang::before, .s-lang:after{
+        border-bottom: none !important;
+    }
+    
+    .s-lang__select{
+        margin: 0 !important;
+    }
+
+    &-icon{
+        color: $color-blue-1;
+        position: relative;
+        cursor: pointer;
+        transition: all .4s ease;
+
+        &:hover{
+            color: $color-blue-3;
+        }
+
+        span{
+            @include flex(center, center);
+            width: 20px;
+            height: 20px;
+            background-color: $color-sub;
+            position: absolute;
+            border-radius: 50%;
+            color: $color-white;
+            top: -5px;
+            right: -5px;
+            font-size: 12px;
+        }
+    }
+}
+
+.s-lang__item {
+
+    display: flex !important;
+    align-items: flex-end !important;
+    gap: 5px;
+    color: $color-blue-1 !important;
+    font-weight: 600 !important;
+
+    & > span{
+        display: flex;
+
+        img{
+            max-width: 40px;
+            border: 1px solid $color-border;
+        }
+    }
+}
+
+.header-active{
+    @media screen and (min-width: 992px) {
+        padding-left: 100px;
+    }
+}

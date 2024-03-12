@@ -1,0 +1,881 @@
+@import "../src/styles/color.scss";
+
+// * {
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
+
+// body,
+// html {
+//     width: 100%;
+//     height: 100%;
+//     margin: 0px;
+//     padding: 0px;
+//     overflow-x: hidden;
+//     background-color: $color-white;
+// }
+
+// a {
+//     transition: all .4s ease;
+//     letter-spacing: 0.5px;
+//     font-weight: 500;
+//     text-decoration: none;
+//     width: 100%;
+// }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/********* MULISH FONT *********/
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-ExtraBold.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-ExtraBold.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-Bold.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-Bold.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-BlackItalic.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-BlackItalic.woff') format('woff');
+//     font-weight: 900;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-Italic.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-Italic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-ExtraLight.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-ExtraLight.woff') format('woff');
+//     font-weight: 200;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-Black.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-Black.woff') format('woff');
+//     font-weight: 900;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-ExtraBoldItalic.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-ExtraBoldItalic.woff') format('woff');
+//     font-weight: bold;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-BoldItalic.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-BoldItalic.woff') format('woff');
+//     font-weight: bold;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-ExtraLightItalic.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-ExtraLightItalic.woff') format('woff');
+//     font-weight: 200;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-SemiBold.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-SemiBold.woff') format('woff');
+//     font-weight: 600;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-MediumItalic.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-MediumItalic.woff') format('woff');
+//     font-weight: 500;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-Light.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-Light.woff') format('woff');
+//     font-weight: 300;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-Medium.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-Medium.woff') format('woff');
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-LightItalic.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-LightItalic.woff') format('woff');
+//     font-weight: 300;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-Regular.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-Regular.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Mulish';
+//     src: url('./assets/fonts/Mulish/Mulish-SemiBoldItalic.woff2') format('woff2'),
+//         url('./assets/fonts/Mulish/Mulish-SemiBoldItalic.woff') format('woff');
+//     font-weight: 600;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+/********* NUNITO FONT *********/
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-Black.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-ExtraBold.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-Italic.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-BlackItalic.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-ExtraLight.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-ExtraBoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-Light.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-LightItalic.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-ExtraLightItalic.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-SemiBold.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-SemiBoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito/Nunito-MediumItalic.woff2') format('woff2'),
+        url('./assets/fonts/Nunito/Nunito-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+/* Open Sans*/
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-LightItalic.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-Italic.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-Light.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-MediumItalic.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-Medium.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-SemiBold.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/OpenSans/OpenSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* ./assets/fonts/Inconsolata/Inconsolata fonts */
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata/Inconsolata-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Inconsolata/Inconsolata-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata/Inconsolata-Black.woff2') format('woff2'),
+        url('./assets/fonts/Inconsolata/Inconsolata-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata/Inconsolata-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Inconsolata/Inconsolata-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata/Inconsolata-ExtraLight.woff2') format('woff2'),
+        url('./assets/fonts/Inconsolata/Inconsolata-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata/Inconsolata-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Inconsolata/Inconsolata-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata/Inconsolata-SemiBold.woff2') format('woff2'),
+        url('./assets/fonts/Inconsolata/Inconsolata-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata/Inconsolata-Light.woff2') format('woff2'),
+        url('./assets/fonts/Inconsolata/Inconsolata-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata/Inconsolata-ExtraBold.woff2') format('woff2'),
+        url('./assets/fonts/Inconsolata/Inconsolata-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Calibri fonts */
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('./assets/fonts/Calibri/Calibri-Italic.woff2') format('woff2'),
+        url('./assets/fonts/Calibri/Calibri-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('./assets/fonts/Calibri/Calibri.woff2') format('woff2'),
+        url('./assets/fonts/Calibri/Calibri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('./assets/fonts/Calibri/Calibri-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Calibri/Calibri-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('./assets/fonts/Calibri/Calibri-Light.woff2') format('woff2'),
+        url('./assets/fonts/Calibri/Calibri-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('./assets/fonts/Calibri/Calibri-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Calibri/Calibri-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('./assets/fonts/Calibri/Calibri-LightItalic.woff2') format('woff2'),
+        url('./assets/fonts/Calibri/Calibri-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+body {
+    font-family: 'Calibri', 'Inconsolata', 'Roboto', 'Open Sans', sans-serif;
+    // font-weight: 500;
+    //font-size: 20px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 0px;
+
+    @media screen and (max-width: 479px) {
+        width: 0px;
+    }
+}
+
+::-webkit-scrollbar-track {
+    background-color: $color-white-1;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: $color-gray-1;
+}
+
+/* Basic Layout */
+.s-layout {
+    padding-top: 70px;
+    padding-left: 270px;
+
+    @media screen and (max-width: 991px) {
+        padding-left: 0;
+    }
+}
+
+.s-layout--active {
+    padding-left: 80px;
+
+    @media screen and (max-width: 991px) {
+        padding-left: 0;
+    }
+}
+
+/* Overlay Header */
+.s-overlay-header {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 99;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+.s-overlay-header--active {
+    @media screen and (max-width: 991px) {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.b-empty-box {
+    text-align: center;
+
+    .b-thumb {
+        width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 767px) {
+            width: 150px;
+        }
+    }
+
+    .b-title {
+        font-size: 24px;
+        font-weight: 700;
+
+        @media screen and (max-width: 991px) {
+            font-size: 22px;
+        }
+    }
+
+    .b-desc {
+        @media screen and (max-width: 991px) {
+            font-size: 15px;
+        }
+    }
+}
+
+.b-empty-box--mobile{
+    .b-thumb {
+        width: 150px;
+    }
+
+    .b-title {
+        font-size: 20px;
+    }
+
+    .b-desc {
+        font-size: 15px;
+    }
+}
+
+.bg-white {
+    background-color: $color-white !important;
+}
+
+.bg-gray {
+    background-color: #ebf0f0 !important;
+    border-radius: 5px;
+
+    fieldset {
+        border: none;
+    }
+
+    input{
+        padding: 13px !important;
+        font-size: 16px !important;
+    }
+
+    input::placeholder {
+        color: #777;
+        opacity: 1;
+        /* Firefox */
+    }
+
+    input::-ms-input-placeholder {
+        /* Edge 12 -18 */
+        color: #777;
+    }
+}
+
+.MuiContainer-root {
+    @media screen and (max-width: 479px) {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+.s-popover {
+    .MuiPopover-paper {
+        box-shadow: none !important;
+        border: 1px solid rgba(224, 224, 224, 1) !important;
+        height: 65px !important;
+        border-radius: 0 !important;
+        width: 230px !important;
+        text-transform: capitalize !important;
+        display: flex !important;
+        align-items: center !important;
+        background-color: #2b3a4a !important;
+
+        p {
+            font-size: 15px !important;
+            padding: 0 20px !important;
+            font-weight: 600 !important;
+            color: $color-white;
+        }
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.s-modal--input {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 50px !important;
+    background-color: #f8f6f7 !important;
+    font-size: 18px;
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+}
+
+.s-modal--textarea {
+    width: 80%;
+    padding: 10px;
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+}
+
+.s-modal--div {
+    position: relative;
+
+    .rs-picker-toggle-caret {
+        font-size: 16px;
+        top: 15px;
+        right: calc(10% + 15px);
+
+        @media screen and (max-width: 479px) {
+            right: 15px;
+        }
+    }
+}
+
+.s-modal--label {
+    margin: 0 auto;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    margin-bottom: 3px;
+    font-size: 19px;
+    text-align: left;
+    width: 80%;
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+}
+
+.swal2-title {
+    text-transform: capitalize;
+}
+
+////////* Reat Image Gallery *////////
+.image-gallery-slides {
+    width: 100%;
+    height: auto;
+    max-height: 75vh;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;
+}
+
+// .image-gallery-slide img {
+//     width: 100%;
+//     height: 400px;
+
+//     @media screen and (max-width: 479px) {
+//         height: 250px;
+//     }
+// }
+
+.image-gallery-thumbnail img {
+    width: auto;
+    height: 75px;
+
+    @media screen and (max-width: 479px) {
+        height: 60px;
+    }
+}
+
+// .image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg {
+//     width: 40px !important;
+// }
+
+// .rs-drawer-wrapper{
+//     .image-gallery-slide img {
+//         height: 330px;
+
+//         @media screen and (max-width: 479px) {
+//             height: 220px;
+//         }
+//     }
+
+//     .image-gallery-thumbnail img {
+//         height: 65px;
+
+//         @media screen and (max-width: 479px) {
+//             height: 60px;
+//         }
+//     }
+// }
+
+.rs-btn-icon.rs-btn {
+    padding: 0 !important;
+}
+
+.b-input--mobile {
+    width: 170px;
+
+    input {
+        padding: 10px;
+        padding-right: 0;
+    }
+
+    label {
+        font-size: 15px;
+        top: -4px;
+    }
+}
+
+.b-input textarea {
+    @media screen and (max-width: 479px) {
+        font-size: 16px !important;
+    }
+}
+
+
+.b-control {
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.1) !important;
+    }
+}

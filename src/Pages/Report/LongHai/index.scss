@@ -1,0 +1,250 @@
+@import "../../styles/color.scss";
+iframe#webpack-dev-server-client-overlay{display:none!important}
+
+.yellow-blink{
+    animation: yellow-blink 1s infinite;
+  }
+
+  .red-blink{
+    animation: red-blink 1s infinite;
+  }
+
+
+  .black-blink{
+    animation: black-blink 1s infinite;
+  }
+
+
+@keyframes yellow-blink{
+    0% {
+      background: yellow;
+    }
+    100% {
+      background: white;
+    }
+  }
+  @keyframes red-blink{
+    0% {
+      background: red;
+    }
+    100% {
+      background: white;
+    }
+  }
+  @keyframes black-blink{
+    0% {
+      background: black;
+    }
+    100% {
+      background: white;
+    }
+  }
+
+
+
+  @-webkit-keyframes  yellow-blink{
+    0% {
+      background: yellow;
+    }
+    100% {
+      background: white;
+    }
+  }
+  @-webkit-keyframes  red-blink{
+    0% {
+      background: red;
+    }
+    100% {
+      background: white;
+    }
+  }
+  @-webkit-keyframes  black-blink{
+    0% {
+      background: black;
+    }
+    100% {
+      background: white;
+    }
+  }
+  
+.s-report-longhai-container{
+
+    .rs-stack-item {
+        margin-top: 5px !important;
+        font-size: 17px;
+
+        @media(max-width: 479px) {
+            font-size: 16px;
+        }
+    }
+
+    .rs-picker-toggle-caret {
+        font-size: 15px !important;
+        top: 13px !important;
+    }
+   
+    .s-title{
+        margin: 10px 0;
+        padding-bottom: 8px;
+        border-bottom: solid 2px #58595b;
+        font-size: 25px;
+        font-weight: 700;
+        color: #072d7a;
+        text-transform: capitalize;
+
+        @media(max-width: 479px) {
+            margin-top: 0;
+            font-size: 23px;
+        }
+    }
+
+    .s-title2{
+        margin: 10px 0;
+        padding-bottom: 8px;
+        border-bottom: solid 2px #58595b;
+        font-size: 25px;
+        font-weight: 700;
+        color: #072d7a;
+    }
+
+    .s-box{
+        flex-direction: row;
+        min-height: 70px;
+        border: 1px solid #dadada;
+        border-bottom: none;
+
+        .title{
+            font-Weight: bold;
+            color: #333;
+            margin-bottom: 3px;
+            font-size: 18px;
+            display: flex;
+            word-break: break-all;
+
+            span {
+                color: red;
+                font-size: 12px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+            }
+        }
+
+        .s-left{
+            background: #F3F3F3;
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            border-right: 1px solid #dadada;
+        }
+
+        .s-right{
+            width: 100%;
+            padding: 10px;
+        }   
+    }
+
+    .last-box{
+        border-bottom: 1px solid #dadada;
+    }
+
+    .box-purpose{
+        min-height: 140px;
+    }
+
+    .b-input{
+        input{
+            padding: 12px 10px !important;
+            font-size: 16px;
+
+            @media(max-width: 479px) {
+                font-size: 16px;
+            }
+        }
+        textarea{
+            padding: 1.5px !important;
+            font-size: 18px;
+
+            @media(max-width: 479px) {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .rs-btn {
+        height: 48px;
+        border-color: #c4c4c4;
+    }
+
+    .rs-picker-daterange .rs-stack-item {
+        margin-top: 5px !important;
+    }
+
+    .rs-btn-close{
+        margin-top: 4px !important;
+    }
+
+    .rs-picker-toggle-value{
+        font-size: 19px;
+        color: #333 !important;
+    }
+
+    .MuiInputLabel-root {
+        top: -3px;
+    }
+
+    .MuiCheckbox-root {
+        padding: 0 5px !important;
+
+        @media(max-width: 479px) {
+            padding: 5px !important;
+        }
+    }
+
+    .b-validate{
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 600;
+        color: red;
+        margin-top: 5px;
+        gap: 3px;
+        display: flex;
+        justify-content: flex-end;
+        font-family: Mulish, Nunito, sans-serif;
+    }
+}
+
+.b-card-10 {
+    padding: 20px 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px !important;
+    border-radius: 10px;
+    position: relative;
+
+    .rs-stack-item {
+        margin-top: 5px !important;
+    }
+
+    .rs-stack {
+        font-size: 18px;
+    }
+
+    .s-gender{
+        position: absolute;
+        top: 13px;
+        left: 85px;
+
+        @media(max-width: 479px) {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    @media(max-width: 479px) {
+        padding: 15px 12px;
+    }
+
+   
+}
+
+

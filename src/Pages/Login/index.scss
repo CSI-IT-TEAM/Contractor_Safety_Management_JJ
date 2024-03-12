@@ -1,0 +1,161 @@
+@import "../../styles/color.scss";
+@import "../../styles/mixin.scss";
+
+.s-home-login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    // padding: 15px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    background-image: url("../../assets/images/backgrounds/bg-02.png");
+   
+    
+    
+    @media screen and (max-width: 479px) {
+        background-size: cover;
+    }
+
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.6);
+        pointer-events: none;
+
+       
+
+    }
+
+    .curved {
+        position: relative;
+        background: #2c3e50;
+        height: 50vh;
+        border-bottom-left-radius: 50% 28%;
+        border-bottom-right-radius: 50% 28%;
+      }
+
+    .b-box{
+         max-width: 500px;
+        // min-height: 500px;
+        // border-radius: 10px;
+        // background-image: url("../../assets/images/backgrounds/bg-02.png");
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+        overflow-y: scroll;
+      
+        @media screen and (max-width: 479px) {
+            width: 90%;
+        }
+    }
+    :-webkit-scrollbar { 
+        width: 0px; /* For Chrome, Safari, and Opera */
+    }
+    &__form {
+        padding: 65px 55px 55px 55px;
+
+        @media screen and (max-width: 479px) {
+            // padding: 40px 25px 40px 25px;
+        }
+    
+        .b-thumb {
+            width: 120px;
+            height: 115px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border: 2px solid #ffffff;
+            background-color: $color-blue-7;
+            color: $color-white;
+            border-radius: 20px;
+
+            .p-name {
+                border-bottom: 6px solid $color-white;
+                border-top: 6px solid $color-white;
+                color: $color-white;
+                font-size: 38px;
+                font-weight: 700;
+                line-height: 1;
+                padding: 4px 0;
+                font-family: "Nunito", sans-serif;
+            }
+
+            @media screen and (max-width: 479px) {
+                max-width: 300px;
+                margin-bottom: 20px;
+            }
+        }
+    
+        .b-bot{
+            margin-top: 50px;
+        }
+
+        .b-input {
+             background-color: $color-bg-white;
+            // border-color: $color-border-1;
+             border-radius: 10px;
+
+            input{
+                padding: 16px 14px 16px 0;
+            }
+        }
+    
+        .p-title {
+            display: block;
+             font-size: 42px;
+            line-height: 1.2;
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 15px;
+            font-family: "Open Sans", sans-serif;
+            color: $color-white;
+            text-shadow: 1px 1px 1px $color-shadow;
+
+            @media screen and (max-width: 479px) {
+                font-size: 24px;
+            }
+
+            @media screen and (max-width: 375px) {
+                font-size: 18px;
+            }
+        }
+    
+        .p-label {
+            font-size: 17px;
+            line-height: 1.5;
+            margin-bottom: 5px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, .8);
+        }
+    
+        .p-info {
+            //color: $color-black-600;
+            margin-right: 3px;
+        }
+
+        .s-mid{
+            margin-top: 25px;
+        }
+    }
+
+    .btn-round{
+        border: 2px solid #92ad53;
+    }
+
+    .paper-login{
+        background-color: $color-bg-white;
+    }
+}

@@ -1,0 +1,640 @@
+@import "../../styles/color.scss";
+
+.s-inspectionv2 {
+
+    padding-bottom: 15px;
+
+    .rs-picker-toggle-caret {
+        font-size: 15px !important;
+        top: 13px !important;
+    }
+
+    .b-card-purpose{
+        padding: 10px;
+        border: 1px solid #dadada;
+        background: rgba(0, 0, 0, 0.04);
+        color: #404040;
+        font-size: 18px;
+        font-weight: 600;
+
+        @media(max-width: 479px) {
+            font-size: 16px;
+            padding: 10px 5px;
+        }
+    }
+
+    .b-icon-check{
+        &:hover{
+            background-color: #2b3a4a;
+            color: #fff;
+        }
+    }
+
+    .s-title {
+        margin: 10px 0;
+        padding-bottom: 8px;
+        border-bottom: solid 2px #58595b;
+        font-size: 25px;
+        font-weight: 700;
+        color: #072d7a;
+        text-transform: capitalize;
+
+        @media(max-width: 479px) {
+            margin-top: 0;
+            font-size: 23px;
+        }
+    }
+
+    .s-title-2 {
+        margin: 10px 0;
+        padding-bottom: 2px;
+        border-bottom: solid 1px #58595b;
+        font-size: 18px;
+        font-weight: 700;
+        color: #072d7a;
+        text-transform: capitalize;
+
+        @media(max-width: 479px) {
+            margin-top: 0;
+            font-size: 18px;
+        }
+    }
+
+    .s-left {
+        padding-right: 5px;
+
+        .rs-btn {
+            border-color: #c4c4c4 !important;
+            box-shadow: none;
+        }
+    }
+
+    .s-right{
+        position: relative;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+
+        .s-overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.75);
+            color: #fff;
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+            backdrop-filter: blur(10px);
+
+            .b-icon{
+                animation: rotate-animation 2s infinite linear;
+            }
+
+            .b-title{
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 8px;
+                color: rgba(255,255,255,.8);
+            }
+        }
+    }
+
+    .rs-picker-toggle-placeholder {
+        font-size: 18px;
+    }
+
+    .b-input {
+        input {
+            padding: 12px !important;
+            font-size: 16px;
+
+            @media(max-width: 479px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .rs-btn {
+        height: 48px;
+        border-color: #c4c4c4;
+        background-color: #f8f6f7 !important;
+    }
+
+    .rs-stack-item {
+        margin-top: 5px !important;
+    }
+
+    .rs-btn-close {
+        margin-top: 4px !important;
+    }
+
+    .rs-picker-toggle-value {
+        font-size: 18px;
+        color: #333 !important;
+    }
+
+    .MuiInputLabel-root {
+        top: -3px;
+        font-size: 16px;
+
+        @media(max-width: 479px) {
+            font-size: 15px;
+        }
+    }
+
+    .MuiCheckbox-root {
+        padding: 0 5px !important;
+
+        @media(max-width: 479px) {
+            padding: 5px !important;
+        }
+    }
+
+    .b-border-left{
+        border-left: 1px solid rgba(224, 224, 224, 1);
+    }
+
+    .b-table-control{
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.1) !important;
+        }
+    }
+
+    .b-table {
+        position: relative;
+
+        .MuiTypography-root {
+            font-size: 15px;
+            font-weight: 500;
+        }
+    
+        .MuiFormControlLabel-root {
+            margin: 0;
+        }
+
+        .b-box{
+            width: 35px;
+            height: 18px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        &-box{
+            font-size: 15px !important;
+            cursor: pointer !important;
+            background-color: #fff !important;
+            padding: 10px 0 !important;
+
+            &:hover{
+                background-color: #f3f3f3 !important;
+            }
+        }
+
+        &-input{
+            input{
+                padding: 0 5px;
+                font-size: 15px;
+            }
+        }
+
+        &-title{
+            padding: 5px !important;
+            text-align: left;
+        }
+
+        .b-box--green{
+            background-color: seagreen;
+            border: none;
+        }
+        
+        .b-box--red{
+            background-color: #d32f2f;
+            border: none;
+        }
+
+        .b-box--gray{
+            background-color: #666;
+            border: none;
+        }
+    }
+
+    .b-border-none{
+        border-right: none !important;
+    }
+}
+
+.b-border-bottom{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(-180deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+.b-card-header--search {
+    background: #072d7a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    @media screen and (max-width: 991px) {
+        font-size: 16px;
+    }
+
+    .b-top {
+        text-align: center;
+
+        .b-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: capitalize;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 10px;
+        }
+
+        .b-item--first {
+            width: 12%;
+        }
+
+        .b-item--sec {
+            width: 34%;
+        }
+
+        .b-item--third {
+            width: 24%;
+        }
+
+        .b-item--fourth {
+            width: 15%;
+        }
+
+        .b-item--fifth {
+            width: 15%;
+            border-right: none;
+        }
+    }
+}
+
+.b-card-header--mobile {
+    font-size: 16px;
+
+    .b-top {
+        text-align: center;
+
+        .b-item{
+            padding: 10px 5px;
+        }
+
+        .b-item--first {
+            width: 15%;
+            border-right: none;
+        }
+
+        .b-item--sec {
+            width: 35%;
+        }
+
+        .b-item--third {
+            width: 30%;
+        }
+
+        .b-item--fourth {
+            width: 20%;
+        }
+    }
+}
+
+.b-card-12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: relative;
+    cursor: pointer;
+    transition: all .4s ease;
+    background: #fff;
+
+    &:hover{
+        background: #f6f6f6;
+    }
+
+    .b-content {
+        flex-grow: 1;
+    }
+
+    .b-icon {
+        width: 40px;
+        height: 40px;
+        background: #2e5f93;
+        color: #fff;
+        border-radius: 5px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .b-info {
+        border-bottom-left-radius: 5px;
+        background-color: #ffca02;
+        padding: 5px 15px;
+        font-weight: 700;
+        display: flex;
+        gap: 3px;
+        position: absolute;
+        top: 0;
+        font-size: 17px;
+        right: 0;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 17px;
+
+        .regular-text {
+            color: #868e96;
+            font-size: 16px;
+        }
+
+        .big-text {
+            font-weight: bold;
+            font-size: 22px;
+            color: green;
+
+            @media screen and (max-width: 479px) {
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+.b-card-15 {
+    border: 1px solid #dadada;
+    border-top: none;
+    overflow: hidden;
+    transition: all .6s;
+    font-size: 17px;
+
+    .b-top {
+        background-color: #fff;
+        transition: all .4s ease;
+
+        .b-item{
+            border-right: 1px solid #dadada;
+            padding: 10px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .6s ease;
+            cursor: pointer;
+        }
+
+        .b-item--first {
+            width: 12%;
+        }
+
+        .b-item--sec {
+            width: 34%;
+            justify-content: flex-start;
+            text-transform: capitalize;
+        }
+
+        .b-item--third {
+            width: 24%;
+        }
+
+        .b-item--fourth {
+            width: 15%;
+        }
+
+        .b-item--fifth {
+            width: 15%;
+            gap: 5px;
+
+            .MuiTypography-root {
+                font-size: 16px;
+            }
+
+            .MuiFormControlLabel-root {
+                margin: 0;
+            }
+        }
+
+        .b-right-none{
+            border-right: none;
+        }
+    }
+}
+
+.b-card-15--mobile{
+
+    font-size: 16px;
+
+    .b-top {
+
+        .b-item--first {
+            width: 15%;
+            padding: 5px 0;
+
+            .MuiTypography-root {
+                font-size: 16px;
+            }
+
+            .MuiFormControlLabel-root {
+                margin: 0;
+            }
+        }
+
+        .b-item--sec {
+            width: 35%;
+        }
+
+        .b-item--third {
+            width: 30%;
+        }
+
+        .b-item--fourth {
+            width: 20%;
+        }
+    }
+}
+
+.b-card-15--active {
+    .b-top {
+        background-color: cornsilk;
+    }
+}
+
+.b-card-16 {
+    border: 1px solid #dadada;
+    border-top: none;
+    overflow: hidden;
+    transition: all .6s;
+    font-size: 16px;
+
+    .b-top {
+        background-color: #fff;
+        transition: all .4s ease;
+
+        .b-item{
+            padding: 10px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .6s ease;
+            cursor: pointer;
+        }
+
+        .b-item--first {
+            width: 50%;
+            justify-content: flex-start;
+        }
+
+        .b-item--sec {
+            width: 13%;
+        }
+
+        .b-item--third {
+            width: 11%;
+
+
+            .MuiTypography-root {
+                font-size: 16px;
+            }
+
+            .MuiFormControlLabel-root {
+                margin: 0;
+            }
+        }
+
+        .b-item--fourth {
+            width: 60%;
+            justify-content: flex-start;
+        }
+
+        .b-item--fifth {
+            width: 29%;
+        }
+
+        .b-box{
+            width: 45px;
+            height: 25px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .b-box--green{
+            background-color: seagreen;
+            border: none;
+        }
+        
+        .b-box--red{
+            background-color: #d32f2f;
+            border: none;
+        }
+
+        .b-box--gray{
+            background-color: #666;
+            border: none;
+        }
+
+        .b-circle{
+            background-color: #f1f1f1;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .b-right-none{
+            border-right: none;
+        }
+    }
+
+    .b-bot{
+        background: #f3f3f3;
+        max-height: 500px;
+        overflow: hidden;
+        transition: max-height .5s ease;
+
+        textarea{
+            font-size: 16px;
+            font-family: "Calibri", "Inconsolata", "Roboto", "Open Sans", sans-serif;
+        }
+    }
+
+    .b-bot--close{
+        max-height: 0;
+    }
+}
+
+.w-30{
+    width: 30px;
+}
+
+.s-upload{
+
+    .b-input{
+        input{
+            padding: 0 10px;
+            font-size: 15px;
+            height: 48px;
+        }
+    }
+
+    .b-validate{
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 600;
+        color: red;
+        margin-top: 5px;
+        gap: 3px;
+        display: flex;
+        justify-content: flex-end;
+        font-family: Mulish, Nunito, sans-serif;
+    }
+
+    .b-thumb-name{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 250px;
+
+        @media screen and (max-width: 479px) {
+            max-width: 300px;
+        }
+
+        @media screen and (max-width: 425px) {
+            max-width: 250px;
+        }
+
+        @media screen and (max-width: 375px) {
+            max-width: 200px;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+.s-blacklist{
+
+    .s-title{
+        margin: 10px 0;
+        padding-bottom: 8px;
+        border-bottom: solid 2px #58595b;
+        font-size: 25px;
+        font-weight: 700;
+        color: #072d7a;
+
+        @media(max-width: 479px) {
+            margin-top: 0;
+            font-size: 23px;
+            }
+    }
+
+    .s-left {
+        padding-right: 15px;
+    }
+
+    .b-input{
+        input{
+            padding: 12px !important;
+            font-size: 16px;
+
+            @media(max-width: 479px) {
+                font-size: 15px;
+            }
+        }
+    }
+    .s-tab{
+        padding: 12px 30px;
+        font-size: 19px;
+        text-transform: none;
+        font-weight: 700;
+        min-width: 200px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        font-family: Calibri,sans-serif;
+        color: #146a90 !important;
+        min-height: auto;
+
+        @media(max-width: 479px) {
+            padding: 10px 25px;
+            min-width: 160px;
+        }
+    }
+
+    .b-date-input{
+        input{
+            padding: 12px !important;
+            font-size: 16px;
+            width: 100%;
+
+            @media(max-width: 479px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .rs-btn {
+        height: 48px;
+        border-color: #c4c4c4;
+    }
+
+    .rs-picker-daterange .rs-stack-item {
+        margin-top: 5px !important;
+    }
+
+    .rs-btn-close{
+        margin-top: 4px !important;
+    }
+
+    .rs-picker-toggle-value{
+        font-size: 18px;
+        color: #333 !important;
+    }
+
+    .MuiInputLabel-root {
+        top: -3px;
+        font-size: 16px;
+
+        @media(max-width: 479px) {
+            font-size: 15px;
+        }
+    }
+
+    .MuiGrid-item{
+        padding-top: 6px !important;
+
+        @media(max-width: 479px) {
+            padding-top: 8px !important;
+        }
+    }
+
+    .MuiCheckbox-root {
+        padding: 0 5px !important;
+
+        @media(max-width: 479px) {
+            padding: 5px !important;
+        }
+    }
+
+    .b-validate{
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 600;
+        color: red;
+        margin-top: 5px;
+        gap: 3px;
+        display: flex;
+        justify-content: flex-end;
+        font-family: Mulish, Nunito, sans-serif;
+    }
+
+    .rs-stack-item {
+        margin-top: 5px !important;
+        font-size: 17px;
+    }
+
+    .b-border-left {
+        border-left: 1px solid rgb(224, 224, 224);
+    }
+
+    .b-table-name{
+        text-align: left;
+    }
+
+    .b-table-select{
+        background-color: cornsilk !important;
+    }
+
+    .ReactVirtualized__Grid{
+        outline: none !important;
+    }
+
+    .rs-picker-toggle-caret {
+        font-size: 15px !important;
+        top: 13px !important;
+    }
+
+    .w-100{
+        @media(max-width: 479px) {
+            width: 100%;
+        }
+    }
+}

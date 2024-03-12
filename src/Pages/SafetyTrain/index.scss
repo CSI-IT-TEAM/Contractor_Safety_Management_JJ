@@ -1,0 +1,171 @@
+.s-safety{
+
+    .s-paper {
+        padding: 16px;
+        margin-top: "5px";
+        margin-bottom: "5px";
+        box-shadow: "rgba(0, 0, 0, 0.12) 0px 0px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px";
+
+        @media screen and (max-width: 479px) {
+            padding: 0;
+            margin: 0;
+            box-shadow: none;
+        }
+    }
+
+    .s-title{
+        margin: 10px 0;
+        padding-bottom: 8px;
+        border-bottom: solid 2px #58595b;
+        font-size: 25px;
+        font-weight: 700;
+        color: #072d7a;
+
+        @media(max-width: 479px) {
+            margin-top: 0;
+            font-size: 23px;
+        }
+    }
+
+    .s-left {
+        padding-right: 15px;
+    }
+
+    .b-input{
+        input{
+            padding: 12px !important;
+            font-size: 16px;
+
+            @media(max-width: 479px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .b-date-input{
+        input{
+            padding: 12px !important;
+            font-size: 16px;
+            width: 100%;
+
+            @media(max-width: 479px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .rs-btn {
+        height: 48px;
+        border-color: #c4c4c4;
+    }
+
+    .rs-picker-daterange .rs-stack-item {
+        margin-top: 5px !important;
+    }
+
+    .rs-btn-close{
+        margin-top: 4px !important;
+    }
+
+    .rs-picker-toggle-value{
+        font-size: 18px;
+        color: #333 !important;
+    }
+
+    .MuiInputLabel-root {
+        top: -3px;
+        font-size: 16px;
+
+        @media(max-width: 479px) {
+            font-size: 15px;
+        }
+    }
+
+    .MuiGrid-item{
+        padding-top: 6px !important;
+
+        @media(max-width: 479px) {
+            padding-top: 8px !important;
+        }
+    }
+
+    .MuiCheckbox-root {
+        padding: 0 5px !important;
+
+        @media(max-width: 479px) {
+            padding: 5px !important;
+        }
+    }
+
+    .b-validate{
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 600;
+        color: red;
+        margin-top: 5px;
+        gap: 3px;
+        display: flex;
+        justify-content: flex-end;
+        font-family: Mulish, Nunito, sans-serif;
+    }
+
+    .rs-stack-item {
+        margin-top: 5px !important;
+        font-size: 17px;
+    }
+
+    .b-border-left {
+        border-left: 1px solid rgb(224, 224, 224);
+    }
+
+    .b-table-name{
+        text-align: left;
+    }
+
+    .b-table-select{
+        background-color: cornsilk !important;
+    }
+
+    .ReactVirtualized__Grid{
+        outline: none !important;
+    }
+
+    .rs-picker-toggle-caret {
+        font-size: 15px !important;
+        top: 13px !important;
+    }
+
+    .btn-reg{
+        margin-top: 28px;
+        height: 100%;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 17px;
+        box-shadow: none;
+        max-height: 45px;
+
+        @media(max-width: 479px) {
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .btn-search{
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 17px;
+        box-shadow: none;
+        max-height: 55px;
+
+        @media(max-width: 479px) {
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .p-none{
+        @media(max-width: 479px) {
+            display: none;
+        }
+    }
+}

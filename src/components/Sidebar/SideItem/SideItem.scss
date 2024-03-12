@@ -1,0 +1,102 @@
+@import "../../../styles/color.scss";
+
+.s-menu {
+    color: #0e2a47;
+    border-bottom: 1px solid $color-border;
+    min-height: 55px;
+    cursor: pointer;
+    transition: all .4s ease;
+
+    &-thumb {
+        max-width: 42px;
+         display: flex;
+    }
+
+    &-title {
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        text-transform: capitalize;
+    }
+
+    &-top {
+         padding: 0 30px;
+         display: flex;
+         align-items: center;
+         gap: 7px;
+         position: relative;
+        min-height: 65px;
+        transition: all .4s ease;
+
+        &:hover {
+            background-color: #e4e9ee;
+            color: #fd625e;
+            gap: 9px;
+        }
+    }
+
+    &-bot{
+        max-height: 0;
+        opacity: 0;
+        display: none;
+        transition: opacity .4s ease;
+    }
+
+    &-icon {
+        padding: 5px;
+        width: 35px !important;
+        height: 35px !important;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        z-index: 99;
+        transition: all .4s ease !important;
+    }
+
+    .is-active {
+        gap: 9px;
+        color: #fd625e;
+        background: #e4e9ee;
+
+        .s-menu-icon {
+            transform: translateY(-50%) rotate(90deg);
+        }
+    }
+
+    .is-dropdown {
+        max-height: 100%;
+        opacity: 1;
+        transform: translate(0, 0);
+        display: block;
+    }
+
+    &-item {
+
+        &--sec {
+            svg {
+                transform: rotate(45deg);
+            }
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 15px 30px;
+            transition: all .4s ease;
+
+            &:hover {
+                background: #285687;
+                box-shadow: 3px 0px #37779c inset;
+                padding-left: 40px;
+                color: #fff;
+
+                svg {
+                    color: rgba(255, 255, 255, .8);
+                }
+            }
+
+            .s-menu-title {
+                font-size: 17px !important;
+            }
+        }
+    }
+}

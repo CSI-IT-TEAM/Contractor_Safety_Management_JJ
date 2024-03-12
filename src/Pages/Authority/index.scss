@@ -1,0 +1,276 @@
+.s-authority{
+
+    .s-title{
+        margin: 10px 0;
+        padding-bottom: 8px;
+        border-bottom: solid 2px #58595b;
+        font-size: 25px;
+        font-weight: 700;
+        color: #072d7a;
+        text-transform: capitalize;
+
+        @media(max-width: 479px) {
+            margin-top: 0;
+            font-size: 23px;
+        }
+    }
+
+    .b-input{
+        input{
+            padding: 12px !important;
+            font-size: 16px;
+            border-color: #c4c4c4;
+            font-family: Open Sans,Inconsolata,Roboto,Calibri,sans-serif;
+
+            @media(max-width: 479px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .rs-btn {
+        height: 48px;
+        border-color: #c4c4c4;
+    }
+
+    .rs-picker-daterange .rs-stack-item {
+        margin-top: 5px !important;
+    }
+
+    .rs-btn-close{
+        margin-top: 4px !important;
+    }
+
+    .rs-picker-toggle-value{
+        font-size: 18px;
+        color: #333 !important;
+    }
+
+    .MuiInputLabel-root {
+        top: -3px;
+        font-size: 16px;
+
+        @media(max-width: 479px) {
+            font-size: 15px;
+        }
+    }
+
+    .MuiFormControlLabel-root{
+        margin: 0 !important;
+    }
+
+    .MuiGrid-item{
+        padding-top: 6px !important;
+
+        @media(max-width: 479px) {
+            padding-top: 8px !important;
+        }
+    }
+
+    .MuiCheckbox-root {
+        padding: 0 5px !important;
+
+        @media(max-width: 479px) {
+            padding: 5px !important;
+        }
+    }
+
+    .b-table-control{
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.1) !important;
+        }
+    }
+
+    .b-validate{
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 600;
+        color: red;
+        margin-top: 5px;
+        gap: 3px;
+        display: flex;
+        justify-content: flex-end;
+        font-family: Mulish, Nunito, sans-serif;
+    }
+
+    .ReactVirtualized__Grid{
+        outline: none !important;
+    }
+
+    .s-left {
+        padding-right: 15px;
+
+        .rs-btn {
+            border-color: #c4c4c4 !important;
+            box-shadow: none;
+        }
+
+        @media screen and (max-width: 479px) {
+            padding-right: 0;
+            margin-bottom: 5px;
+        }
+    }
+
+    .s-right{
+        position: relative;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+    }
+
+    .b-table{
+        position: relative;
+
+        .b-table-title{
+            text-transform: capitalize;
+            text-align: left;
+        }
+    }
+
+    .b-border-left {
+        border-left: 1px solid #e0e0e0;
+    }
+
+    .b-cell--user{
+        padding: 4px 8px !important;
+        cursor: pointer;
+    }
+
+    .s-tab{
+        padding: 12px 30px;
+        font-size: 19px;
+        text-transform: capitalize;
+        font-weight: 700;
+        min-width: 200px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        font-family: Calibri,sans-serif;
+        color: #146a90 !important;
+        min-height: auto;
+
+        @media(max-width: 479px) {
+            padding: 10px 25px;
+            min-width: 160px;
+        }
+    }
+
+    .Mui-selected{
+        color: #1c366b !important;
+        background-color: rgb(43 108 173 / 20%);
+    }
+
+    .MuiTabs-indicator {
+        background-color: #1c366b !important;
+        height: 2px;
+    }
+
+    .b-table--checkbox{
+        padding: 0 !important;
+
+        label{
+            width: 100%;
+            padding: 8px;
+            justify-content: center;
+        }
+    }
+}
+
+.s-drawer--reg{
+    padding: 20px 25px !important;
+    background-image: url("../../assets/images/backgrounds/bg-01.png");
+    background-position: right;
+    background-repeat: repeat;
+
+    @media(max-width: 479px) {
+        padding: 15px 20px !important;
+    }
+
+    .b-input input {
+        padding: 12px !important;
+        font-size: 16px;
+        border-color: #c4c4c4;
+        font-family: Open Sans, Inconsolata, Roboto, Calibri, sans-serif;
+    }
+
+    .rs-stack-item {
+        margin-top: 5px !important;
+    }
+
+    .rs-stack {
+        font-size: 18px;
+    }
+
+    .rs-picker-toggle-value{
+        color: #575757 !important;
+    }
+
+    .rs-picker-toggle-caret {
+        font-size: 15px !important;
+        top: 13px !important
+    }
+
+    .rs-picker-toggle {
+        height: 50px;
+    }
+
+    .b-validate {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 600;
+        color: red;
+        margin-top: 5px;
+        gap: 3px;
+        display: flex;
+        justify-content: flex-end;
+        font-family: Mulish, Nunito, sans-serif;
+    }
+
+    .MuiFormControlLabel-root{
+        margin: 0 !important;
+    }
+
+    .MuiGrid-item{
+        padding-top: 6px !important;
+
+        @media(max-width: 479px) {
+            padding-top: 8px !important;
+        }
+    }
+
+    .MuiCheckbox-root {
+        padding: 0 5px !important;
+
+        @media(max-width: 479px) {
+            padding: 5px !important;
+        }
+    }
+
+    .b-table-title{
+        text-align: left;
+    }
+
+    .b-empty-box .b-thumb {
+        width: 150px;
+    }
+}
+
+.s-drawer--header{
+    padding: 18px 20px 19px;
+
+    @media(max-width: 479px) {
+        padding: 20px 15px 19px;
+    }
+
+    .rs-drawer-header-close {
+        right: 15px;
+        left: auto;
+    }
+
+    .rs-btn-icon.rs-btn-sm>.rs-icon{
+        font-size: 20px;
+    }
+}
