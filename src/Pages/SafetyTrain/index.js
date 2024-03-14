@@ -376,7 +376,7 @@ const SafetyTrainPage = () => {
                                     name="EMP_CITIZEN_ID"
                                     error={EMPRegisterData.EMP_CITIZEN_ID === ""}
                                     value={EMPRegisterData.EMP_CITIZEN_ID}
-                                    inputProps={{ inputMode: "text", maxLength: 12 }}
+                                    inputProps={{ inputMode: "text" }}
                                     sx={{ background: "#f8f6f7" }}
                                     className="b-input bg-white"
                                     fullWidth
