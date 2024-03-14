@@ -68,7 +68,7 @@ const UserGroupMenuSelectURL =
  const GetSendEmailDataURL = 
  baseURL + "LMES/PKG_RSM_CONTRACTOR.SEND_EMAIL_INFOR_LIST_SELECT";
 
- const SendEmailURL = "http://172.30.10.120/send-email";
+ const SendEmailURL = "http://10.10.100.73/send-email";
 
  const UserJobDegreeSelectURL = 
  baseURL + "LMES/PKG_RSM_CONTRACTOR.USER_JOB_DEGREE_SELECT";
@@ -99,15 +99,15 @@ const ResultItemSaveURL =
 const UserRegisterSaveURL =
   baseURL + "LMES/PKG_RSM_CONTRACTOR.USER_REGISTER_SAVE/SAVE";
 
-const InspecUploadImageURL = "http://172.30.10.120:9000/RSM_IMAGE_UPLOAD";
+const InspecUploadImageURL = "http://10.10.100.73:9000/RSM_IMAGE_UPLOAD";
 
 //const InspecUploadImageURL ="http://172.30.30.41:4000/RSM_IMAGE_UPLOAD";.
 
-const UploadCoopImageURL = "http://172.30.10.120:9000/RSM_COOP_IMAGE_UPLOAD";
+const UploadCoopImageURL = "http://10.10.100.73:9000/RSM_COOP_IMAGE_UPLOAD";
 
 // const UploadCoopImageURL = "http://172.30.30.41:4000/RSM_COOP_IMAGE_UPLOAD";
 
-const UploadRequestPaperWorkImageURL = "http://172.30.10.120:9000/RSM_REQUEST_PAPERWORK_IMAGE_UPLOAD";
+const UploadRequestPaperWorkImageURL = "http://10.10.100.73:9000/RSM_REQUEST_PAPERWORK_IMAGE_UPLOAD";
 
 const ContractorBlacklistUpdateURL =
   baseURL + "LMES/PKG_RSM_CONTRACTOR.VENDOR_BLACKLIST_SAVE/SAVE";
