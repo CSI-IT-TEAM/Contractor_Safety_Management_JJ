@@ -71,6 +71,8 @@ const LoginPage = () => {
       isValid = !(RegData.EMPID === "" || RegData.PASSWORD === "");
     }
 
+    localStorage.clear();
+
     if (isValid) {
       let _downloadData = await fetchData(UserMenuListSelectURL, {
         ARG_TYPE: "Q_VALID",
@@ -200,7 +202,26 @@ const LoginPage = () => {
                   isAuth: true,
                   isChief: result[0].IS_CHIEF === "Y" ? true : false,
                 };
-                localStorage.setItem("CONT_USER_INFOR", JSON.stringify(Infor));
+
+                try{
+                    localStorage.setItem("CONT_USER_INFOR", JSON.stringify(Infor));
+                }
+                catch{
+                    let baseInfor = {
+                        username: LoginData.EMPID.toUpperCase(), // State username với giá trị mặc định là "Guest"
+                        password: base64_encode(LoginData.PASSWORD),
+                        displayname: result[0].EMP_NM, // State display name
+                        plant_cd: result[0].PLANT_CD,
+                        dept_cd: result[0].DEPT_CD,
+                        avatar: null,
+                        Permission: result[0].DEPT_NM,
+                        isAuth: true,
+                        isChief: result[0].IS_CHIEF === "Y" ? true : false,
+                      };
+
+                    localStorage.setItem("CONT_USER_INFOR", JSON.stringify(baseInfor));
+                }
+
                 dispatch(updateUser(Infor));
                 if (LoginData.EMPID.toUpperCase() === "LONGHAI") {
                   navigate("/scr/inspection");

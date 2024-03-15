@@ -19,6 +19,8 @@ import vnlang_image from "../../assets/images/languages/vn.png";
 import enlang_image from "../../assets/images/languages/en.png";
 import krlang_image from "../../assets/images/languages/kr.png";
 import indolang_image from "../../assets/images/languages/indo.png";
+import subAvatar from "../../assets/images/avatar.png";
+import { isNullOrEmpty } from "../../functions";
 
 const menu_settings = [
     { title: "title_password_change", route: "/passwordchange" },
@@ -93,7 +95,11 @@ const Header = ({ open, handleOpen, handleOpenModal, handleNotify }) => {
         let userInfor = JSON.parse(localStorage.getItem("CONT_USER_INFOR"));
         if (userInfor !== null && userInfor !== undefined) {
             let UserAvatar = userInfor.avatar;
-            if (userInfor.Permission === "SCR") {
+
+            if(isNullOrEmpty(UserAvatar)){
+                setUserAvatar(subAvatar);
+            }
+            else if (userInfor.Permission === "SCR") {
                 setUserAvatar(longhaiAvatar);
             } else {
                 setUserAvatar(arrayBufferToBase64(UserAvatar));
