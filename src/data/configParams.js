@@ -495,7 +495,7 @@ const SendEmailParams = (emailList, sendData, type) => {
             "- Total orang yang akan bergabung: " + sendData.TOTAL_PEOPLE + " Rakyat<br />" +
             "- Dari " + sendData.VISIT_START_DATE + " sampai " + sendData.VISIT_END_DATE + "<br/>" +
             footer +
-            "Silakan kunjungi link ini <a href='http://172.30.10.120:3090'>Contractor Safety Management</a> untuk memeriksa dan memastikan informasi.<br />" +
+            "Silakan kunjungi link ini <a href='http://10.10.100.37:3090'>Contractor Safety Management</a> untuk memeriksa dan memastikan informasi.<br />" +
             "Terima kasih." + 
             "</body>" +
             "</html>"
